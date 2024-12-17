@@ -87,6 +87,13 @@ p {
   border-radius: 10px;
   display: inline-block;
 }
+.rounded-box2 {
+  padding: 4px 10px;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  display: inline-block;
+}
 
 /* New styles for project cards */
 .projects {
