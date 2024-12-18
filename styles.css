@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
 /* Existing styles */
 html, body {
   height: 100%;
@@ -5,37 +8,34 @@ html, body {
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #240B36;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: hsl(240, 11%, 7%);
   color: #fff;
   display: flex;
   flex-direction: column;
 }
 
-header {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #333;
-}
-
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 2rem;
+  margin-top: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   background-color: #444;
+  align-items: center;
+  height: 5rem;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
   padding: 10px 15px;
-  display: block;
+  display:block;
+  border-radius: 10px;
 }
 
 nav ul li a:hover {
@@ -51,53 +51,11 @@ p {
   font-size: 1.1rem;
 }
 
-.carousel {
-  margin: 20px auto;
-  width: 80%;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
 
-.carousel h2 {
-  text-align: center;
-}
 
-.carousel-container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-  width: 100%;
-  height: auto;
-  flex-shrink: 0;
-}
-
-.about {
-  text-align: center;
-  padding: 20px;
-  flex: 1;
-}
-
-.rounded-box {
-  padding: 4px 10px;
-  background-color: #f2f2f2;
-  color: #000;
-  border-radius: 10px;
-  display: inline-block;
-}
-.rounded-box2 {
-  padding: 4px 10px;
-  background-color: #f2f2f2;
-  color: #000;
-  border-radius: 10px;
-  display: inline-block;
-}
-
-/* New styles for project cards */
+/* Projects Styles */
 .projects {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   flex: 1;
 }
@@ -111,23 +69,31 @@ p {
 
 .project-card {
   margin-bottom: 50px;
-  background-color: #333;
+  background-color: #44135051;
   border-radius: 10px;
   overflow: hidden;
   width: 350px; 
   height: 500px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
   transform: scale(1.05);
 }
 
-.project-card img {
+.project-card img:first-child {
   width: 100%;
   height: 250px;
   object-fit: cover;
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .project-card h3 {
@@ -138,9 +104,41 @@ p {
 
 .project-card p {
   padding: 0 10px 20px;
-  margin: 0; /* Remove bottom margin */
+  margin: 0;
   color: #ddd;
-  height: 100px; /* Description area height */
+  height: 100px;
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+.unitylogo {
+  width: 30px !important;  
+  height: 30px !important; 
+  max-width: 30px !important;
+  max-height: 30px !important;
+  object-fit: contain; 
+  margin-left: 20px;
+}
+
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #ffffff;  
+  background-color: #00000000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af; 
 }
 
 footer {
@@ -148,3 +146,13 @@ footer {
   padding: 10px;
   background-color: #333;
 }
+.project-card-footer .btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.githublogo{
+  width: 10px;
+  height: 10px;
+}
+
